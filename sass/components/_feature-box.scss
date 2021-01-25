@@ -1,0 +1,42 @@
+.feature-heading {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 20px;
+  background-image: linear-gradient(
+    to bottom,
+    $color-black,
+    $color-primary-dark
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.feature-box {
+  background-color: rgba($color: $color-white, $alpha: 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color: $color-black, $alpha: 0.15);
+  transition: transform 0.3s;
+
+  &__icon {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    background-image: linear-gradient(
+      to top,
+      $color-primary-light,
+      $color-primary-dark
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  &:hover {
+    transform: translateY(-1rem) scale(1.03);
+  }
+
+  &__list-item {
+    list-style: none;
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "austin-portfolio",
+  "version": "1.0.0",
+  "description": "austin evans software engineering portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Austin-dv-Evans/ADVE-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Austin-dv-Evans/ADVE-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Austin-dv-Evans/ADVE-Portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {}
+}
