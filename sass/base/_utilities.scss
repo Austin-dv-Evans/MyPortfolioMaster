@@ -1,7 +1,6 @@
 .u-center-text {
-  text-align: center;
+  text-align: center !important;
 }
-
 .u-margin-bottom-big {
   margin-bottom: 8rem;
 }
@@ -11,10 +10,15 @@
 .u-margin-bottom-sm {
   margin-bottom: 1.5rem;
 }
-
 .u-margin-top-big {
   margin-top: 8rem;
 }
 .u-margin-top-sm {
-  margin-top: 3rem;
+  margin-top: 1rem;
+}
+.u-margin-left-md {
+  margin-left: 25%;
+}
+.u-margin-right-md {
+  margin-right: 3rem;
 }
