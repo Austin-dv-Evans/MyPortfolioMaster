@@ -9,17 +9,20 @@
     />
     <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="index.js"></script>
     <title>Austin.DV.Evans</title>
   </head>
   <body>
     <div class="navigation">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-      <label for="navi-toggle" class="navigation__button">Menu</label>
-      <div class="navigation__background">&nbsp</div>
+
+      <label for="navi-toggle" class="navigation__button"><span class="navigation__icon">&nbsp;</span></label>
+
+      <div class="navigation__background">&nbsp;</div>
       <nav class="navigation__nav">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link">About Austin</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Tech Stack</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">My Stack</a></li>
           <li class="navigation__item"><a href="#" class="navigation__link">Apps</a></li>
           <li class="navigation__item"><a href="#" class="navigation__link">Reviews</a></li>
           <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
@@ -36,7 +39,7 @@
           <span class="heading-primary--sub">Software Engineer</span>
           <span class="heading-primary--sub">Web Developer</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated"
+        <a href="#apps" class="btn btn--white btn--animated"
           >Check out what I've built</a
         >
       </div>
@@ -116,7 +119,7 @@
                 <ul class="feature-box__list">
                   <li class="feature-box__list-item">CRUD</li>
                   <li class="feature-box__list-item">Authentication</li>
-                  <li class="feature-box__list-item">Database Management</li>
+                  <li class="feature-box__list-item">Private Routes</li>
                 </ul>
               </p>
             </div>
@@ -149,7 +152,7 @@
           </div>
         </div>
       </section>
-      <section class="section-apps">
+      <section class="section-apps" id="apps">
         <div class="u-center-text u-margin-bottom-big u-margin-top-big">
           <h2 class="heading-secondary">Apps I've Built</h2>
         </div>
@@ -176,10 +179,10 @@
               </div>
               <div class="card__side card__side--back card__side--back-1">
                 <div class="card__cta">
-                  <a href="https://github.com/Austin-dv-Evans/Moment/blob/master/app/src/main/java/com/moment2/moment/MainActivity.kt">
+                  <a href="https://github.com/Austin-dv-Evans/Moment/blob/master/app/src/main/java/com/moment2/moment/MainActivity.kt" target="_blank">
                     <img src="/assets/github.svg" alt="github" class="card__side--back-imgs card__side--back-imgs-git">
                   </a>
-                  <a href="https://www.youtube.com/watch?v=ohUrhi-w_S0&t=225s&ab_channel=AustinEvans">
+                  <a href="https://www.youtube.com/watch?v=ohUrhi-w_S0&t=225s&ab_channel=AustinEvans" target="_blank">
                     <img src="/assets/youtube_social_icon_dark.png" alt="youtube_icon" class="card__side--back-imgs">
                   </a>
                 </div>
@@ -208,10 +211,10 @@
               </div>
               <div class="card__side card__side--back card__side--back-2">
                 <div class="card__cta">
-                  <a href="https://github.com/Austin-dv-Evans/myAgent-BackEnd">
+                  <a href="https://github.com/Austin-dv-Evans/myAgent-BackEnd" target="_blank">
                     <img src="/assets/github.svg" alt="github" class="card__side--back-imgs card__side--back-imgs-git">
                   </a>
-                  <a href="https://www.youtube.com/watch?v=CCOOxlnmUBQ&ab_channel=AustinEvans">
+                  <a href="https://www.youtube.com/watch?v=CCOOxlnmUBQ&ab_channel=AustinEvans" target="_blank">
                     <img src="/assets/youtube_social_icon_dark.png" alt="youtube_icon" class="card__side--back-imgs">
                   </a>
                 </div>
@@ -240,10 +243,10 @@
               </div>>
               <div class="card__side card__side--back card__side--back-3">
                 <div class="card__cta">
-                  <a href="https://github.com/Austin-dv-Evans/The-Strainerator-App">
+                  <a href="https://github.com/Austin-dv-Evans/The-Strainerator-App" target="_blank">
                     <img src="/assets/github.svg" alt="github" class="card__side--back-imgs card__side--back-imgs-git">
                   </a>
-                  <a href="https://www.youtube.com/watch?v=tBHI7SCLFTE&t=64s&ab_channel=AustinEvans">
+                  <a href="https://www.youtube.com/watch?v=tBHI7SCLFTE&t=64s&ab_channel=AustinEvans" target="_blank">
                     <img src="/assets/youtube_social_icon_dark.png" alt="youtube_icon" class="card__side--back-imgs">
                   </a>
                 </div>
@@ -252,7 +255,10 @@
           </div>
         </div>
         <div class="u-center-text">
-          <a href="https://github.com/Austin-dv-Evans" class="btn btn--white"><img src="/assets/github.svg" alt="github"></a>
+          <a href="https://github.com/Austin-dv-Evans" target="_blank" class="btn btn--white"><img src="/assets/github.svg" alt="github"></a>
+        </div>
+        <div class="u-center-text u-margin-top-sm">
+          <a href="#popup" class="btn btn--white" onclick="plusSlides(1)">Slideshow</a>
         </div>
       </section>
       <section class="section-stories">
@@ -380,5 +386,120 @@
         </div>
       </div>
     </footer>
+    <div class="popup" id="popup">
+      <div class="popup__content slideshow__container">
+        <div class="slideshow__slides fade">
+          <div class="slideshow__slides--numbers">1/20</div>
+          <img src="/assets/slideshow/mainMoment.jpg" alt="moment" class="slideshow__images">
+        </div>
+        <div class="slideshow__slides fade">
+          <div class="slideshow__slides--numbers">2/20</div>
+          <img src="/assets/slideshow/myAgentHome.png" alt="moment" class="slideshow__images">
+        </div>
+        <div class="slideshow__slides fade">
+          <div class="slideshow__slides--numbers">3/20</div>
+          <img src="/assets/slideshow/straineratorViewFull.png" alt="moment" class="slideshow__images">
+        </div>
+        <div class="slideshow__slides fade">
+          <div class="slideshow__slides--numbers">2/20</div>
+          <img src="/assets/slideshow/DEVedgeBlog.png" alt="moment" class="slideshow__images">
+        </div>
+        <div class="slideshow__slides fade">
+          <div class="slideshow__slides--numbers">2/20</div>
+          <img src="/assets/slideshow/blogEdit.png" alt="moment" class="slideshow__images">
+        </div>
+        <div class="slideshow__slides fade">
+          <div class="slideshow__slides--numbers">2/20</div>
+          <img src="/assets/slideshow/blogScreen.png" alt="moment" class="slideshow__images shrink">
+        </div>
+        <div class="slideshow__slides fade">
+          <div class="slideshow__slides--numbers">2/20</div>
+          <img src="/assets/slideshow/electronLuna.png" alt="moment" class="slideshow__images">
+        </div>
+        <div class="slideshow__slides fade">
+          <div class="slideshow__slides--numbers">2/20</div>
+          <img src="/assets/slideshow/birthdayUI.png" alt="moment" class="slideshow__images">
+        </div>
+        <div class="slideshow__slides fade">
+          <div class="slideshow__slides--numbers">2/20</div>
+          <img src="/assets/slideshow/cocktailsView.png" alt="moment" class="slideshow__images">
+        </div>
+        <div class="slideshow__slides fade">
+          <div class="slideshow__slides--numbers">2/20</div>
+          <img src="/assets/slideshow/cocktailsSearch.png" alt="moment" class="slideshow__images">
+        </div>
+        <div class="slideshow__slides fade">
+          <div class="slideshow__slides--numbers">2/20</div>
+          <img src="/assets/slideshow/cocktailsResults.png" alt="moment" class="slideshow__images">
+        </div>
+        <div class="slideshow__slides fade">
+          <div class="slideshow__slides--numbers">2/20</div>
+          <img src="/assets/slideshow/reviewsUI.png" alt="moment" class="slideshow__images">
+        </div>
+        <div class="slideshow__slides fade">
+          <div class="slideshow__slides--numbers">2/20</div>
+          <img src="/assets/slideshow/reviewsUI2.png" alt="moment" class="slideshow__images">
+        </div>
+        <div class="slideshow__slides fade">
+          <div class="slideshow__slides--numbers">2/20</div>
+          <img src="/assets/slideshow/menuUI.png" alt="moment" class="slideshow__images shrink-less">
+        </div>
+        <div class="slideshow__slides fade">
+          <div class="slideshow__slides--numbers">2/20</div>
+          <img src="/assets/slideshow/questionsUI.png" alt="moment" class="slideshow__images">
+        </div>
+        <div class="slideshow__slides fade">
+          <div class="slideshow__slides--numbers">2/20</div>
+          <img src="/assets/slideshow/toursUI.png" alt="moment" class="slideshow__images">
+        </div>
+        <div class="slideshow__slides fade">
+          <div class="slideshow__slides--numbers">2/20</div>
+          <img src="/assets/slideshow/wildFireTracker.png" alt="moment" class="slideshow__images">
+        </div>
+        <div class="slideshow__slides fade">
+          <div class="slideshow__slides--numbers">2/20</div>
+          <img src="/assets/slideshow/travelInfo.png" alt="moment" class="slideshow__images shrink-extra">
+        </div>
+        <div class="slideshow__slides fade">
+          <div class="slideshow__slides--numbers">2/20</div>
+          <img src="/assets/slideshow/travelFollow.png" alt="moment" class="slideshow__images">
+        </div>
+        <div class="slideshow__slides fade">
+          <div class="slideshow__slides--numbers">2/20</div>
+          <img src="/assets/slideshow/travelViews.png" alt="moment" class="slideshow__images">
+        </div>
+        <div class="slideshow__slides fade">
+          <div class="slideshow__slides--numbers">2/20</div>
+          <img src="/assets/slideshow/travelReviews.png" alt="moment" class="slideshow__images">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)"><</a>
+        <a class="next" onclick="plusSlides(1)">></a>
+      </div>
+      <a href="#apps" class="slideshow__close">&times;</a>
+
+      <div class="slideshow__dots u-center-text">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <span class="dot" onclick="currentSlide(11)"></span>
+        <span class="dot" onclick="currentSlide(12)"></span>
+        <span class="dot" onclick="currentSlide(13)"></span>
+        <span class="dot" onclick="currentSlide(14)"></span>
+        <span class="dot" onclick="currentSlide(15)"></span>
+        <span class="dot" onclick="currentSlide(16)"></span>
+        <span class="dot" onclick="currentSlide(17)"></span>
+        <span class="dot" onclick="currentSlide(18)"></span>
+        <span class="dot" onclick="currentSlide(19)"></span>
+        <span class="dot" onclick="currentSlide(20)"></span>
+        <span class="dot" onclick="currentSlide(21)"></span>
+      </div>
+    </div>
   </body>
 </html>
