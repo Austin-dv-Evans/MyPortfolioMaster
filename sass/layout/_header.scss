@@ -8,14 +8,24 @@
     url("../assets/mountain.jpg");
   background-size: cover;
   background-position: top;
+  background-attachment: fixed;
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
+  @include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 95%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 95%);
+  }
+
   &__logo-box {
     position: absolute;
-    top: 4rem;
-    left: 4rem;
+    top: 6rem;
+    left: 5rem;
+
+    @include respond(phone) {
+      top: 8rem;
+    }
   }
   &__logo {
     height: 3.5rem;

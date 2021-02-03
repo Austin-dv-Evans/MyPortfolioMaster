@@ -9,7 +9,7 @@
     />
     <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="index.js"></script>
+    
     <title>Austin.DV.Evans</title>
   </head>
   <body>
@@ -21,11 +21,11 @@
       <div class="navigation__background">&nbsp;</div>
       <nav class="navigation__nav">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">My Stack</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Apps</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Reviews</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
+          <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+          <li class="navigation__item"><a href="#stack" class="navigation__link">My Stack</a></li>
+          <li class="navigation__item"><a href="#apps" class="navigation__link">Apps</a></li>
+          <li class="navigation__item"><a href="#reviews" class="navigation__link">Reviews</a></li>
+          <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -36,18 +36,18 @@
       <div class="header__text-box">
         <h1 class="heading-primary">
           <span class="heading-primary--main">Austin Evans</span>
-          <span class="heading-primary--sub">Software Engineer</span>
-          <span class="heading-primary--sub">Web Developer</span>
+          <span class="heading-primary--sub">Software_Engineer</span>
+          <span class="heading-primary--sub">Application_Developer</span>
         </h1>
         <a href="#apps" class="btn btn--white btn--animated"
-          >Check out what I've built</a
+          >View my work</a
         >
       </div>
     </header>
     <main>
-      <section class="section-about">
+      <section class="section-about" >
         <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">Get to know me</h2>
+          <h2 class="heading-secondary" id="about">Get to know me</h2>
         </div>
         <div class="row">
           <div class="col-1-of-2">
@@ -72,7 +72,7 @@
               programmer and the amount I have learned in that time is insane.
               For this dev, the sky's the limit.
             </p>
-            <a href="#" class="btn-text">Let's Collab! &rarr;</a>
+            <a href="#contact" class="btn-text">Let's Collab! &rarr;</a>
           </div>
           <div class="col-1-of-2">
             <div class="composition">
@@ -95,7 +95,7 @@
           </div>
         </div>
       </section>
-      <section class="section-features">
+      <section class="section-features" id="stack">
         <h2 class="feature-heading u-center-text">My Stack</h2>
         <div class="row">
           <div class="col-1-of-4">
@@ -132,7 +132,7 @@
                 <ul class="feature-box__list">
                   <li class="feature-box__list-item">BEM</li>
                   <li class="feature-box__list-item">Nesting</li>
-                  <li class="feature-box__list-item">7-1 Architecture</li>
+                  <li class="feature-box__list-item">7-1 Structures</li>
                 </ul>
               </p>
             </div>
@@ -152,9 +152,9 @@
           </div>
         </div>
       </section>
-      <section class="section-apps" id="apps">
+      <section class="section-apps" >
         <div class="u-center-text u-margin-bottom-big u-margin-top-big">
-          <h2 class="heading-secondary">Apps I've Built</h2>
+          <h2 class="heading-secondary" id="apps">Apps I've Built</h2>
         </div>
         <div class="row">
           <div class="col-1-of-3">
@@ -261,7 +261,7 @@
           <a href="#popup" class="btn btn--white" onclick="plusSlides(1)">Slideshow</a>
         </div>
       </section>
-      <section class="section-stories">
+      <section class="section-stories" id="reviews">
         <div class="bg-video">
           <video class="bg-video__content" autoplay loop muted>
             <source src="/assets/lineBg.mp4" type="video/mp4">
@@ -269,7 +269,7 @@
           </video>
         </div>
         <div class="u-center-text ">
-          <h2 class="heading-secondary heading-story u-margin-bottom-big ">What my collegues have said about me</h2>
+          <h2 class="heading-story u-margin-bottom-big ">What my collegues have said about me</h2>
         </div>
         <div class="row">
           <div class="story">
@@ -277,8 +277,8 @@
               <img src="/assets/adrianFace.jpeg" alt="adrian" class="story__img">
               <figcaption class="story__caption">Adrian Avila</figcaption>
             </figure>
-            <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-sm">Adrian Avila - Software Engineer</h3>
+            <div class="story__text--box">
+              <h3 class="heading-tertiary u-margin-bottom-sm story__heading">Adrian Avila - Software Engineer</h3>
               <p class="story__text">Austin is an intelligent and innovative developer who makes an excellent team member. He's able to think outside the box and come up with creative ideas and effective solutions. His can-do and upbeat attitude are contagious and are a boon to morale in the workplace. His motivation is apparent in all situations and his communication is top notch.</p>
             </div>
           </div>
@@ -289,8 +289,8 @@
               <img src="/assets/bryceFace.jpeg" alt="adrian" class="story__img">
               <figcaption class="story__caption">Bryce Kennedy</figcaption>
             </figure>
-            <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-sm">Bryce Kennedy - Software Engineer</h3>
+            <div class="story__text--box">
+              <h3 class="heading-tertiary u-margin-bottom-sm story__heading">Bryce Kennedy - Software Engineer</h3>
               <p class="story__text">Austin is a smart, personable, and creative developer with a great sense of humor. He is able to quickly understand complex problems and develop unique solutions, delivering a great final product. Not only is he technically capable, he is able to communicate his ideas clearly and effectively, injecting his positive and enthusiastic nature into everything he does. Anyone would be lucky to work with or for Austin.</p>
             </div>
           </div>
@@ -301,14 +301,14 @@
               <img src="/assets/benFace.jpeg" alt="adrian" class="story__img">
               <figcaption class="story__caption">Ben Dunn</figcaption>
             </figure>
-            <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-sm">Ben Dunn - Software Engineer</h3>
+            <div class="story__text--box">
+              <h3 class="heading-tertiary u-margin-bottom-sm story__heading">Ben Dunn - Software Engineer</h3>
               <p class="story__text">Austin is an innovative, insatiably curious developer of the highest order. During my time at Flatiron School, I can honestly say that the only thing that impressed me more than his work was his infectious positivity. Unflappable and creative as hell, Austin is one to watch for sure. Austin is generous with his time, kind and supremely talented.</p>
             </div>
           </div>
         </div>
       </section>
-      <section class="section-book">
+      <section class="section-book" id="contact">
         <div class="row">
           <div class="book">
             <div class="book__form">
@@ -355,7 +355,7 @@
     </main>
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="assets/_ADVE_.png" alt="logo" class="footer__logo">
+        <a href="#"><img src="assets/_ADVE_.png" alt="logo" class="footer__logo"></a>
         <h4 class="footer__heading">Austin David Vincelli-Evans</h4>
       </div>
       <div class="row">
@@ -363,11 +363,11 @@
           <div class="footer__navigation">
             <ul class="footer__list">
               <li class="footer__item"><a href="#" class="footer__link">Top</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">About</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">My Stack</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Apps</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Reviews</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+              <li class="footer__item"><a href="#about" class="footer__link">About</a></li>
+              <li class="footer__item"><a href="#stack" class="footer__link">My Stack</a></li>
+              <li class="footer__item"><a href="#apps" class="footer__link">Apps</a></li>
+              <li class="footer__item"><a href="#reviews" class="footer__link">Reviews</a></li>
+              <li class="footer__item"><a href="#contact" class="footer__link">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -394,83 +394,83 @@
         </div>
         <div class="slideshow__slides fade">
           <div class="slideshow__slides--numbers">2/20</div>
-          <img src="/assets/slideshow/myAgentHome.png" alt="moment" class="slideshow__images">
+          <img src="/assets/slideshow/myAgentHome.png" alt="myAgent" class="slideshow__images">
         </div>
         <div class="slideshow__slides fade">
           <div class="slideshow__slides--numbers">3/20</div>
-          <img src="/assets/slideshow/straineratorViewFull.png" alt="moment" class="slideshow__images">
+          <img src="/assets/slideshow/straineratorViewFull.png" alt="Strainerator" class="slideshow__images">
         </div>
         <div class="slideshow__slides fade">
           <div class="slideshow__slides--numbers">2/20</div>
-          <img src="/assets/slideshow/DEVedgeBlog.png" alt="moment" class="slideshow__images">
+          <img src="/assets/slideshow/DEVedgeBlog.png" alt="MERNPractice" class="slideshow__images">
         </div>
         <div class="slideshow__slides fade">
           <div class="slideshow__slides--numbers">2/20</div>
-          <img src="/assets/slideshow/blogEdit.png" alt="moment" class="slideshow__images">
+          <img src="/assets/slideshow/blogEdit.png" alt="MERNPractice" class="slideshow__images">
         </div>
         <div class="slideshow__slides fade">
           <div class="slideshow__slides--numbers">2/20</div>
-          <img src="/assets/slideshow/blogScreen.png" alt="moment" class="slideshow__images shrink">
+          <img src="/assets/slideshow/blogScreen.png" alt="MERNPractice" class="slideshow__images shrink">
         </div>
         <div class="slideshow__slides fade">
           <div class="slideshow__slides--numbers">2/20</div>
-          <img src="/assets/slideshow/electronLuna.png" alt="moment" class="slideshow__images">
+          <img src="/assets/slideshow/electronLuna.png" alt="electronApp" class="slideshow__images">
         </div>
         <div class="slideshow__slides fade">
           <div class="slideshow__slides--numbers">2/20</div>
-          <img src="/assets/slideshow/birthdayUI.png" alt="moment" class="slideshow__images">
+          <img src="/assets/slideshow/birthdayUI.png" alt="UIDaily" class="slideshow__images">
         </div>
         <div class="slideshow__slides fade">
           <div class="slideshow__slides--numbers">2/20</div>
-          <img src="/assets/slideshow/cocktailsView.png" alt="moment" class="slideshow__images">
+          <img src="/assets/slideshow/cocktailsView.png" alt="cocktailApp" class="slideshow__images">
         </div>
         <div class="slideshow__slides fade">
           <div class="slideshow__slides--numbers">2/20</div>
-          <img src="/assets/slideshow/cocktailsSearch.png" alt="moment" class="slideshow__images">
+          <img src="/assets/slideshow/cocktailsSearch.png" alt="cocktailApp" class="slideshow__images">
         </div>
         <div class="slideshow__slides fade">
           <div class="slideshow__slides--numbers">2/20</div>
-          <img src="/assets/slideshow/cocktailsResults.png" alt="moment" class="slideshow__images">
+          <img src="/assets/slideshow/cocktailsResults.png" alt="cocktailApp" class="slideshow__images">
         </div>
         <div class="slideshow__slides fade">
           <div class="slideshow__slides--numbers">2/20</div>
-          <img src="/assets/slideshow/reviewsUI.png" alt="moment" class="slideshow__images">
+          <img src="/assets/slideshow/reviewsUI.png" alt="UIDaily" class="slideshow__images">
         </div>
         <div class="slideshow__slides fade">
           <div class="slideshow__slides--numbers">2/20</div>
-          <img src="/assets/slideshow/reviewsUI2.png" alt="moment" class="slideshow__images">
+          <img src="/assets/slideshow/reviewsUI2.png" alt="UIDaily" class="slideshow__images">
         </div>
         <div class="slideshow__slides fade">
           <div class="slideshow__slides--numbers">2/20</div>
-          <img src="/assets/slideshow/menuUI.png" alt="moment" class="slideshow__images shrink-less">
+          <img src="/assets/slideshow/menuUI.png" alt="UIDaily" class="slideshow__images shrink-less">
         </div>
         <div class="slideshow__slides fade">
           <div class="slideshow__slides--numbers">2/20</div>
-          <img src="/assets/slideshow/questionsUI.png" alt="moment" class="slideshow__images">
+          <img src="/assets/slideshow/questionsUI.png" alt="UIDaily" class="slideshow__images">
         </div>
         <div class="slideshow__slides fade">
           <div class="slideshow__slides--numbers">2/20</div>
-          <img src="/assets/slideshow/toursUI.png" alt="moment" class="slideshow__images">
+          <img src="/assets/slideshow/toursUI.png" alt="UIDaily" class="slideshow__images">
         </div>
         <div class="slideshow__slides fade">
           <div class="slideshow__slides--numbers">2/20</div>
-          <img src="/assets/slideshow/wildFireTracker.png" alt="moment" class="slideshow__images">
+          <img src="/assets/slideshow/wildFireTracker.png" alt="wildFireTracker" class="slideshow__images">
         </div>
         <div class="slideshow__slides fade">
           <div class="slideshow__slides--numbers">2/20</div>
-          <img src="/assets/slideshow/travelInfo.png" alt="moment" class="slideshow__images shrink-extra">
+          <img src="/assets/slideshow/travelInfo.png" alt="travelApp" class="slideshow__images shrink-extra">
         </div>
         <div class="slideshow__slides fade">
           <div class="slideshow__slides--numbers">2/20</div>
-          <img src="/assets/slideshow/travelFollow.png" alt="moment" class="slideshow__images">
+          <img src="/assets/slideshow/travelFollow.png" alt="travelApp" class="slideshow__images">
         </div>
         <div class="slideshow__slides fade">
           <div class="slideshow__slides--numbers">2/20</div>
-          <img src="/assets/slideshow/travelViews.png" alt="moment" class="slideshow__images">
+          <img src="/assets/slideshow/travelViews.png" alt="travelApp" class="slideshow__images">
         </div>
         <div class="slideshow__slides fade">
           <div class="slideshow__slides--numbers">2/20</div>
-          <img src="/assets/slideshow/travelReviews.png" alt="moment" class="slideshow__images">
+          <img src="/assets/slideshow/travelReviews.png" alt="travelApp" class="slideshow__images">
         </div>
         <a class="prev" onclick="plusSlides(-1)"><</a>
         <a class="next" onclick="plusSlides(1)">></a>
@@ -502,4 +502,5 @@
       </div>
     </div>
   </body>
+  <script src="index.js"></script>
 </html>

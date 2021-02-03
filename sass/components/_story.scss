@@ -1,13 +1,18 @@
 .story {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba($color: $color-black, $alpha: 0.1);
   background-color: rgba($color-white, 0.6);
   border-radius: 3px;
-  padding: 6rem;
+  padding: 4rem;
   font-size: $default-font-size;
   padding-left: 9rem;
   transform: skewX(-12deg);
+
+  @include respond(tab-port) {
+    transform: skewX(0);
+    width: 100%;
+  }
 
   &__shape {
     width: 15rem;
@@ -19,12 +24,35 @@
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(10deg);
     position: relative;
+
+    @include respond(tab-port) {
+      transform: translateX(0) skewX(0);
+      float: none;
+    }
   }
   &__img {
     height: 100%;
+    @include respond(tab-port) {
+      display: block;
+    }
   }
+
+  &__text--box {
+  }
+
   &__text {
     transform: skewX(4deg);
+    @include respond(tab-port) {
+      transform: skewX(0);
+      margin: 1rem;
+    }
+  }
+
+  &__heading {
+    @include respond(tab-port) {
+      display: block;
+      margin: 1.5rem 5rem 2rem 5rem;
+    }
   }
 
   &__caption {
