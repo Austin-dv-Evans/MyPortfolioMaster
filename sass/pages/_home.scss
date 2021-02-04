@@ -3,8 +3,18 @@
   padding: 25rem 0;
   margin-top: -20vh;
 
+  @include respond(big-desktop) {
+    padding: 25rem 3rem;
+  }
+  @include respond(tab-land) {
+    padding: 20rem 3rem;
+  }
   @include respond(tab-port) {
-    padding: 20rem 0;
+    padding: 20rem 3rem;
+  }
+  @include respond(tiny-phone) {
+    margin-top: -10vh;
+    padding: 20rem 2rem 10rem 2rem;
   }
 }
 
@@ -15,13 +25,18 @@
       rgba($color-primary, 0.6),
       rgba($color-primary-dark, 0.6)
     ),
-    url("../assets/penguinScene2.png");
+    url("../assets/penguinScene.jpg");
   background-size: cover;
-
   transform: skewY(-3deg);
   margin-top: -10rem;
   & > * {
     transform: skewY(3deg);
+  }
+  @include respond(tab-land) {
+    padding: 12rem 5rem 20rem 1rem;
+  }
+  @include respond(tab-port) {
+    padding: 12rem 5rem 20rem 5rem;
   }
 }
 
@@ -59,11 +74,36 @@
     url(../../assets/cabin.jpg);
   background-size: cover;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba($color: $color-black, $alpha: 0.15);
-  height: 70rem;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
 
+  @include respond(tab-land) {
+    margin: 0 4rem;
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 50%,
+        transparent 50%
+      ),
+      url(../../assets/cabin.jpg);
+  }
+  @include respond(tab-port) {
+    margin: 0;
+    min-width: 300px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-white, 0.95) 0%,
+        rgba($color-white, 0.63) 100%
+      ),
+      url(../../assets/cabin.jpg);
+  }
   &__form {
     width: 50%;
     padding: 6rem;
+    @include respond(tab-port) {
+      width: 100%;
+    }
+    @include respond(phone) {
+      min-width: 250px;
+    }
   }
 }

@@ -13,7 +13,6 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i
-  var slides = []
   var slides = document.getElementsByClassName("slideshow__slides")
 
   var dots = document.getElementsByClassName("dot")
@@ -33,4 +32,8 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block"
 
   dots[slideIndex - 1].className += " active"
+}
+
+const navClose = () => {
+  document.getElementById("navi-toggle").checked = false
 }

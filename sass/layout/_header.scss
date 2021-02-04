@@ -17,7 +17,6 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 95%);
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 95%);
   }
-
   &__logo-box {
     position: absolute;
     top: 6rem;
@@ -46,7 +45,5 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    /* background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 8px; */
   }
 }

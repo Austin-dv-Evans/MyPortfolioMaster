@@ -10,6 +10,19 @@
   );
   -webkit-background-clip: text;
   color: transparent;
+
+  @include respond(tab-land) {
+    padding-left: 6rem;
+  }
+  @include respond(tab-port) {
+    padding-left: 0;
+  }
+  @include respond(phone) {
+    padding-left: 0;
+  }
+  @include respond(tiny-phone) {
+    padding-left: 0;
+  }
 }
 .feature-box {
   background-color: rgba($color: $color-white, $alpha: 0.8);
@@ -24,6 +37,7 @@
 
   @include respond(tab-port) {
     margin: 4rem;
+    font-size: 2rem;
   }
 
   &__icon {

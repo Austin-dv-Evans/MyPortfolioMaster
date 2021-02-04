@@ -33,6 +33,11 @@
 }
 
 .slideshow {
+  &__open {
+    @include respond(tab-port) {
+      display: none !important;
+    }
+  }
   &__slides {
     display: none;
 
@@ -145,7 +150,7 @@
 
 .active,
 .dot:hover {
-  background-color: #d60000;
+  background-color: $color-secondary-dark;
 }
 
 .shrink {
