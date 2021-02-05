@@ -825,7 +825,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(91, 198, 210, 0.6), rgba(31, 123, 172, 0.6)), url("../assets/mountain.jpg");
+  background-image: linear-gradient(to right bottom, rgba(91, 198, 210, 0.6), rgba(31, 123, 172, 0.6)), url("../assets/mountain2.jpg");
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
